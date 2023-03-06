@@ -19,7 +19,7 @@ Follow the instructions in [pytorch.org](http://pytorch.org) for your current se
 First, you will need to download and setup a dataset. We provide the test data set link for download:
 ```
 链接：https://pan.baidu.com/s/1qInhNydvx0rVWOf3a69QbA 
-提取码：yd4x
+提取码：待上传
 ```
 Valid <dataset_name> are: screws_A, cloth_strips, etc. 
 
@@ -40,7 +40,7 @@ The download link of the weight file (.pth) is as follows
 
 ```
 链接：https://pan.baidu.com/s/1qInhNydvx0rVWOf3a69QbA 
-提取码：yd4x
+提取码：待上传
 ```
    
 ### 3. Test!
