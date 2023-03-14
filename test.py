@@ -3,7 +3,7 @@ import sys
 import os
 import torch
 import torchvision.transforms as transforms
-import time
+
 
 
 from torchvision.utils import save_image
@@ -67,8 +67,6 @@ if not os.path.exists(results_path):
 
 for i, batch in enumerate(dataloader):
 
-    # start_time = time.time()
-
     real_norm = Variable(input_Img.copy_(batch['img_norm']))
     mask = Variable(mask.copy_(batch['mask_norm']))
 
@@ -78,10 +76,7 @@ for i, batch in enumerate(dataloader):
     generated_abnl = 0.45*(netG_norm2abnl(input_real_norm).data + 1.0)
     real_norm = 0.5*((real_norm) +1.0)
 
-    # end_time = time.time()
-    # time_perImg = end_time - start_time
-    # print ("time_perImg", time_perImg)
-
+    
     # Save image files
     save_image(real_norm, '%s/%04d_norm.png' %(results_path,(i+1)))
     save_image(mask, '%s/%04d_mask.png' %(results_path,(i+1)))
@@ -89,7 +84,5 @@ for i, batch in enumerate(dataloader):
 
     sys.stdout.write('\rGenerated images %04d of %04d' % (i+1, len(dataloader)))
 
-
-
-
+    
 sys.stdout.write('\n')
