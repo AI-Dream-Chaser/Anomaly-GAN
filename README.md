@@ -18,8 +18,8 @@ Follow the instructions in [pytorch.org](http://pytorch.org) for your current se
 ### 1. Setup the dataset
 First, you will need to download and setup a dataset. We provide the test data set link for download:
 ```
-Link：https://pan.baidu.com/s/1h6CYq4XWesoYKN9pMxwqvw    
-Extract code： uw5u
+Link：https://pan.baidu.com/s/18Gyz-NKT6WRaoZtmAa_6zw   
+Extract code： ed7f
 ```
 Valid <dataset_name> are: screws_A, cloth_strips, etc. 
 
@@ -39,8 +39,8 @@ Alternatively you can build your own dataset by setting up the following directo
 The download link of the weight file (.pth) is as follows
 
 ```
-Link：https://pan.baidu.com/s/1pKA8GXVib_uzKdShsS70VA   
-Extract code： 79u7
+Link：https://pan.baidu.com/s/1czemWm-v6zUOj97X-oVXzQ    
+Extract code： cale
 ```
    
 ### 3. Test!
